@@ -15,5 +15,6 @@ namespace BOOKQuoteApi.Data
         }
 
         public DbSet<BOOKQuoteApi.Entities.Book> Book { get; set; } = default!;
+        public DbSet<BOOKQuoteApi.Entities.Quote> Quote { get; set; } = default!;
     }
 }
