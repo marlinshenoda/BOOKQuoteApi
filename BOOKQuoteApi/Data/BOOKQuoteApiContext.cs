@@ -4,10 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using BOOKQuoteApi.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace BOOKQuoteApi.Data
 {
-    public class BOOKQuoteApiContext : DbContext
+    public class BOOKQuoteApiContext : IdentityDbContext<ApplicationUser>
     {
         public BOOKQuoteApiContext (DbContextOptions<BOOKQuoteApiContext> options)
             : base(options)
