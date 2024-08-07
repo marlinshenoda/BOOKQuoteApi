@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using BOOKQuoteApi.Data;
 using Microsoft.AspNetCore.Identity;
+using BOOKQuoteApi.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<BOOKQuoteApiContext>(options =>
